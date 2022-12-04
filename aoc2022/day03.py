@@ -3,7 +3,7 @@ def part_one():
     with open("input03.txt") as file:
         for item_list in file.read().split():
             compartment_one, compartment_two = set(), set()
-            for i, char in enumerate(item_list):
+            for i, char in enumerate(item_list):  # for char in item_list
                 if i < len(item_list) / 2:
                     compartment_one.add(char)
                 else:
