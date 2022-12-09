@@ -106,9 +106,6 @@ def part_one_broken():
                 if tokens[2] not in directories:
                     directories[tokens[2]] = 0
                 current_directories.append(tokens[2])
-            elif line.startswith("dir"):
-                # might not need this
-                True
             elif line[0].isnumeric():
                 # add size of file to each directory in current_directories
                 for dir in current_directories:
@@ -120,4 +117,5 @@ def part_one_broken():
     return sum
 
 
-print(part_two())
+print(f"Part one solution: {part_one()}")
+print(f"Part two solution: {part_two()}")
