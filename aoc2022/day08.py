@@ -111,4 +111,5 @@ def is_visible_right(i, j, grid):
     return True
 
 
-print(part_two())
+print(f"Part one: {part_one()}")
+print(f"Part two: {part_two()}")
