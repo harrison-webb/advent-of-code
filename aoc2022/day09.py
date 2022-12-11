@@ -6,8 +6,9 @@ def part_one():
     tail_position_list = set()
     tail_position_list.add(tuple(tail_position))
     for command in input:
-        direction = command[0]
-        steps = int(command[2])
+        tokens = command.split()
+        direction = tokens[0]
+        steps = int(tokens[1])
         for i in range(steps):
             head_previous = head_position
             if direction == "U":
